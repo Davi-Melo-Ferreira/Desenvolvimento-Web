@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article {
+    flex: 1 1 calc(50% - 20px);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+article p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.font-1{
+    font-family: "Press Start 2P", system-ui
+}
+
+.font-2{
+    font-family: "Edu QLD Hand", cursive;
+}
+
+.font-3{
+    font-family: "Alumni Sans SC", sans-serif;
+}
+
+.font-4{
+    font-family: "WDXL Lubrifont TC", sans-serif;
+}
