@@ -1,0 +1,53 @@
+body{
+    background-color: #DAD5CF;
+}
+
+header{
+    padding: 5px;
+    background-color: #846744;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+.navegacao {
+    padding: 2%;
+    background-color: #332F27;
+    text-align: center;
+}
+
+.navegacao a{
+    padding: 4px;
+    color: white;
+}
+
+section{
+    background-color: #846744;
+    border-radius: 8px;
+    text-align: center;
+    margin: 50px;
+}
+
+#cardapio ul{
+    border-radius: 8px;
+    background-color: #AE9577;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cardapio ul li{
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    gap: 10px;
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+}
