@@ -1,53 +1,105 @@
 body{
-    background-color: #DAD5CF;
+    background-color: #FAA916;
 }
 
 header{
     padding: 5px;
-    background-color: #846744;
+    background-color: #FAA916;
 }
 
 h1{
-    color: white;
+    font-family: "Ewert", serif;
+    font-size: 10em;
+    color: #eb3700;
+    text-align: center;
+}
+
+h2{
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 80px;
+    font-family: "Rye", serif;
+    color: #FAA916;
+    text-align: center;
+    padding: 20px;
+}
+
+h3{
+    font-size: 100px;
+    font-family: "Ewert", serif;
+    color: #FAA916;
     text-align: center;
 }
 
 .navegacao {
     padding: 2%;
-    background-color: #332F27;
+    background-color: #b92b12;
     text-align: center;
 }
 
 .navegacao a{
+    font-size: 30px;
     padding: 4px;
-    color: white;
+    color: #FAA916;
 }
 
 section{
-    background-color: #846744;
+    background-color: #fa3816;
     border-radius: 8px;
     text-align: center;
-    margin: 50px;
 }
 
+#taco, #burrito, #sobremesa, #bebida{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item img {
+  width: 25em;
+  border-radius: 8px;
+}
+
+.item h4 {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/*
 #cardapio ul{
     border-radius: 8px;
-    background-color: #AE9577;
+    background-color: #FAA916;
     display: flex;
     justify-content: space-between;
 }
 
 #cardapio ul li{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    color: #b92b12;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-img{
-    gap: 10px;
-    width: 100%;
-}
+*/
 
 footer{
     text-align: center;
     font-size: 15px;
+}
+
+p{
+    font-size: 40px;
+    color: #5c1407;
+    margin: 10px;
+    padding: 10px;
+    height: 70%;
 }
