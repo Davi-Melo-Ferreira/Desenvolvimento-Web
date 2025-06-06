@@ -9,7 +9,7 @@ header{
 
 h1{
     font-family: "Ewert", serif;
-    font-size: 10em;
+    font-size: 8em;
     color: #eb3700;
     text-align: center;
 }
@@ -25,7 +25,7 @@ h2{
 }
 
 h3{
-    font-size: 100px;
+    font-size: 80px;
     font-family: "Ewert", serif;
     color: #FAA916;
     text-align: center;
@@ -70,7 +70,7 @@ section{
 .item h4 {
   margin-top: 8px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /*
@@ -93,11 +93,11 @@ section{
 
 footer{
     text-align: center;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 p{
-    font-size: 40px;
+    font-size: 30px;
     color: #5c1407;
     margin: 10px;
     padding: 10px;
