@@ -1,2 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-'https://img.freepik.com/fotos-gratis/baixo-angulo-de-arranha-ceus_1359-1047.jpg?uid=R22943566&ga=GA1.1.967256569.1748623939&semt=ais_hybrid&w=740'
+body{
+    background-color: #D9D9D9;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.principal{
+    background-image: url(../img/house1.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-principal{
+    text-align: center;
+    font-size: 40px;
+}
+
+nav{
+    background-color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav a{
+    color: #D9D9D9;
+    padding: 10px;
+    font-size: 20px;
+}
+
+section{
+    background-color: #404040;
+}
+
+.home h2{
+    color: #D9D9D9;
+    font-size: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.home p{
+    color: #D9D9D9;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre article{
+    padding: 40px;
+    border: 2px solid #404040;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    color: #D9D9D9;
+    text-align: center;
+}
+
+.quem-somos h2{
+    font-size: 30px;
+    width: 100%;
+    padding: 20px;
+    color:#0D0D0D ;
+}
+
+.quem-somos p{
+    font-size: 20px;
+    color: #D9D9D9;
+}
+
+h3{
+    color:#0D0D0D;
+}
+
+.valores ul{
+    list-style: none;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.secao h2{
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: #D9D9D9;
+}
+
+.secao p{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.caixap{
+    width: 350px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #404040;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #D9D9D9;
+}
+
+.caixap img{
+    width: 100%;
+}
+
+.contato{
+    font-size: 25px;
+    text-align: center;
+    color: #D9D9D9;
+}
+
+.contato h2{
+    color: #0D0D0D;
+}
+
+.formulario{
+    padding: 20px;
+}
+
+input[type='text'],
+input[type='email'],
+textarea{
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button{
+    margin: 15px;
+    padding:  10px 20px;
+    border: none;
+    background-color: #0D0D0D;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
