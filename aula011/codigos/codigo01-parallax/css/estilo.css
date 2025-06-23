@@ -1,0 +1,33 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.parallax{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1{
+    background-image: url(https://img.freepik.com/fotos-gratis/foto-de-alto-angulo-de-uma-bela-floresta-com-muitas-arvores-verdes-envoltas-em-nevoa-na-nova-zelandia_181624-19717.jpg?uid=R22943566&ga=GA1.1.967256569.1748623939&semt=ais_items_boosted&w=740);
+}
+
+.parallax2{
+    background-image: url(https://img.freepik.com/fotos-gratis/vista-aerea-das-arvores-verdes-e-vibrantes-da-floresta_181624-49828.jpg?uid=R22943566&ga=GA1.1.967256569.1748623939&semt=ais_items_boosted&w=740);
+}
+
+.content{
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
