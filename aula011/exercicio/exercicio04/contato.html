@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Fale com a PetLove</h2>
+            <p>Nosso atendimento é multicanal, empático e eficiente. Queremos construir uma relação de confiança com
+                você e seu pet, oferecendo suporte humano e técnico em cada etapa. Utilize os canais abaixo para
+                entrar em contato conosco da forma que preferir.</p>
+        </article>
+        <section class="container-contato">
+
+
+            <article class="caixa-contato">
+                <h2>Central de Atendimento</h2>
+                <p>📞 <strong>Telefone:</strong> (11) 99999-9999<br>
+                    💬 <strong>WhatsApp:</strong> (11) 98888-8888<br>
+                    ⏰ <strong>Horário:</strong> Segunda a Sábado – 08h às 18h</p>
+            </article>
+
+            <article class="caixa-contato">
+                <h2>Email e Suporte Especializado</h2>
+                <p>Envie dúvidas, elogios ou solicitações para:<br>
+                    📧 <strong>Email:</strong> atendimento@petlove.com.br<br>
+                    Respondemos em até 24h úteis com a atenção que você merece.</p>
+            </article>
+
+            <article class="caixa-contato">
+                <h2>Endereço da Unidade Física</h2>
+                <p>📍 <strong>Rua dos Animais Felizes, 123 – Bairro PetVille – São Paulo/SP</strong><br>
+                    A 5 minutos da Estação Central. Estacionamento no local para clientes.</p>
+            </article>
+
+            <article class="caixa-contato">
+                <h2>Redes Sociais</h2>
+                <p>Siga-nos para acompanhar novidades, campanhas de adoção, eventos e conteúdo educativo:</p>
+                <ul>
+                    <li><a href="#">Instagram @petlove</a></li>
+                    <li><a href="#">Facebook /PetLoveOficial</a></li>
+                    <li><a href="#">TikTok @petlove.brasil</a></li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Mande-nos uma Mensagem!</h2>
+            <article class="formulario">
+                
+                <form action="enviar.php" method="post">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="assunto">Assunto:</label><br>
+                    <input type="text" id="assunto" name="assunto" required><br><br>
+
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="6" required></textarea><br><br>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+
+    <footer class="rodape">
+        <p>&copy; 2025 PetLove - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
