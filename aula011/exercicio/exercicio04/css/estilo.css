@@ -11,13 +11,14 @@ section ul{
 body{
     background-color: white;
     font-family: 'Roboto';
+    color: #0D0D0D;
 }
 
 header{
-    padding: 150px;
-    background-image: url(..//img/desenho.svg);
-    background-size: 1400px;
-    font-size: 30px;
+    background-image: url(..//img/desenho.png);
+    background-size: 1910px 400px;
+    background-position: top;
+    height: 400px;
     background-attachment: fixed;
 }
 
@@ -25,6 +26,7 @@ nav{
     text-align: center;
     background-color: #0D0D0D;
     padding: 25px;
+    width: 100%;
 }
 
 nav ul{
@@ -54,13 +56,22 @@ section{
 
 article{
     padding: 5px;
-    margin: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     background-color: #04588C;
 }
 
 h2{
     padding: 10px;
     font-size: 35px;
+}
+
+
+h3{
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
 }
 
 p{
@@ -77,6 +88,10 @@ p{
     margin: 5px 0px 5px 0px;
 }
 
+.conteudo-principal{
+    width: 100%;
+}
+
 .produtos h2{
     margin-top: 20px;
     text-align: center;
@@ -86,26 +101,16 @@ p{
     display: flex;
 }
 
-/*background-color: rgb(78, 157, 248); */
-
 .secao{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
-}
-
-h3{
-    padding: 10px;
-    text-align: center;
-    font-size: 25px;
 }
 
 .caixa{
     width: 220px;
     padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
+    margin: 5px;
     text-align: left;
 }
 
