@@ -16,7 +16,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-2">
+    <!-- Altura 250px e largura 100% e object-fit-cover -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-2 sticky-top">
         <a href="#" class="navbar-brand">Cinema</a>
         <button class="navbar-toggler" type="button"
             data-bs-toggle="collapse"
@@ -27,7 +28,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="menu-target">
-            <ul class="navbar-nav" style="margin-left: 35%;">
+            <ul class="navbar-nav" style="margin-left: 30%;">
                 <li class="nav-item">
                     <a href="#" class="nav-link active" aria-current="page">Página Inicial</a>
                 </li>
@@ -48,7 +49,7 @@
                         </ul>
                     </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link ">Cadastre-se</a>
+                    <a href="contato.html" class="nav-link ">Nos Contate</a>
                 </li>
             </ul>
         </div>
@@ -56,55 +57,216 @@
     
     <!--Container para o conteúdo-->
     <main class="container">
-        <div id="carouselAvancado" class="carousel slide m-5 " data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselAvancado" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselAvancado" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselAvancado" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div id="carouselAvancado" class="carousel slide m-5 bg-dark" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
+            <div class="carousel-indicators bg-warning">
+                <button type="button" data-bs-target="#carouselAvancado" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselAvancado" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselAvancado" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <div id="slide" class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/agua-da-chuva-em-um-macro-verde-da-folha.jpg" alt="Slide 1" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Slide 1</h5>
+                        <p>Texto adicional para o Slide 1</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/fundo-de-folhas-verdes-tropicais.jpg" alt="Slide 2" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Slide 2</h5>
+                        <p>Texto adicional para o Slide 2</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/textura-de-folha-verde-fundo-de-textura-de-folha.jpg" alt="Slide 3" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Slide 3</h5>
+                        <p>Texto adicional para o Slide 3</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAvancado" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAvancado" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
         </div>
-        
-        <div id="slide" class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/agua-da-chuva-em-um-macro-verde-da-folha.jpg" alt="Slide 1" class="d-block w-100">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Slide 1</h5>
-                    <p>Texto adicional para o Slide 1</p>
-                </div>
+
+        <section>
+            <h2>Em Alta</h2>
+            <div class="card-group bg-dark mb-4">
+                <article class="card mx-1 m-1">
+                    <img src="img/agua-da-chuva-em-um-macro-verde-da-folha.jpg" alt="Imagem 1" class="card-img-top">
+                    <section class="card-body">
+                        <h5 class="card-title">Notícia 1</h5>
+                        <p class="card-text">
+                            ⭐⭐⭐⭐⭐ 5.0
+                        </p>
+                        <p class="card-text">
+                            <small class="text-body-secondary">Atualizado há 3 minutos</small>
+                        </p>
+                    </section>
+                </article>
+                <article class="card mx-1 m-1">
+                    <img src="img/agua-da-chuva-em-um-macro-verde-da-folha.jpg" alt="Imagem 1" class="card-img-top">
+                    <section class="card-body">
+                        <h5 class="card-title">Notícia 1</h5>
+                        <p class="card-text">
+                            ⭐⭐⭐⭐⭐ 5.0
+                        </p>
+                        <p class="card-text">
+                            <small class="text-body-secondary">Atualizado há 3 minutos</small>
+                        </p>
+                    </section>
+                </article>
+                <article class="card mx-1 m-1">
+                    <img src="img/agua-da-chuva-em-um-macro-verde-da-folha.jpg" alt="Imagem 1" class="card-img-top">
+                    <section class="card-body">
+                        <h5 class="card-title">Notícia 1</h5>
+                        <p class="card-text">
+                            ⭐⭐⭐⭐⭐ 5.0
+                        </p>
+                        <p class="card-text">
+                            <small class="text-body-secondary">Atualizado há 3 minutos</small>
+                        </p>
+                    </section>
+                </article>
             </div>
+        </section>
 
-            <div class="carousel-item">
-                <img src="img/fundo-de-folhas-verdes-tropicais.jpg" alt="Slide 2" class="d-block w-100">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Slide 2</h5>
-                    <p>Texto adicional para o Slide 2</p>
-                </div>
+        <section>
+            <h2>Filmes</h2>
+            <div class="card-group bg-dark mb-4">
+                <article class="card mx-1 m-1">
+                    <img src="img/agua-da-chuva-em-um-macro-verde-da-folha.jpg" alt="Imagem 1" class="card-img-top">
+                    <section class="card-body">
+                        <h5 class="card-title">Notícia 1</h5>
+                        <p class="card-text">
+                            ⭐⭐⭐⭐⭐ 5.0
+                        </p>
+                        <p class="card-text">
+                            <small class="text-body-secondary">Atualizado há 3 minutos</small>
+                        </p>
+                    </section>
+                </article>
+                <article class="card mx-1 m-1">
+                    <img src="img/agua-da-chuva-em-um-macro-verde-da-folha.jpg" alt="Imagem 1" class="card-img-top">
+                    <section class="card-body">
+                        <h5 class="card-title">Notícia 1</h5>
+                        <p class="card-text">
+                            ⭐⭐⭐⭐⭐ 5.0
+                        </p>
+                        <p class="card-text">
+                            <small class="text-body-secondary">Atualizado há 3 minutos</small>
+                        </p>
+                    </section>
+                </article>
+                <article class="card mx-1 m-1">
+                    <img src="img/agua-da-chuva-em-um-macro-verde-da-folha.jpg" alt="Imagem 1" class="card-img-top">
+                    <section class="card-body">
+                        <h5 class="card-title">Notícia 1</h5>
+                        <p class="card-text">
+                            ⭐⭐⭐⭐⭐ 5.0
+                        </p>
+                        <p class="card-text">
+                            <small class="text-body-secondary">Atualizado há 3 minutos</small>
+                        </p>
+                    </section>
+                </article>
             </div>
-
-            <div class="carousel-item">
-                <img src="img/textura-de-folha-verde-fundo-de-textura-de-folha.jpg" alt="Slide 3" class="d-block w-100">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Slide 3</h5>
-                    <p>Texto adicional para o Slide 3</p>
-                </div>
+        </section>
+        <section>
+            <h2>Series</h2>
+            <div class="card-group bg-dark mb-4">
+                <article class="card mx-1 m-1">
+                    <img src="img/agua-da-chuva-em-um-macro-verde-da-folha.jpg" alt="Imagem 1" class="card-img-top">
+                    <section class="card-body">
+                        <h5 class="card-title">Notícia 1</h5>
+                        <p class="card-text">
+                            ⭐⭐⭐⭐⭐ 5.0
+                        </p>
+                        <p class="card-text">
+                            <small class="text-body-secondary">Atualizado há 3 minutos</small>
+                        </p>
+                    </section>
+                </article>
+                <article class="card mx-1 m-1">
+                    <img src="img/agua-da-chuva-em-um-macro-verde-da-folha.jpg" alt="Imagem 1" class="card-img-top">
+                    <section class="card-body">
+                        <h5 class="card-title">Notícia 1</h5>
+                        <p class="card-text">
+                            ⭐⭐⭐⭐⭐ 5.0
+                        </p>
+                        <p class="card-text">
+                            <small class="text-body-secondary">Atualizado há 3 minutos</small>
+                        </p>
+                    </section>
+                </article>
+                <article class="card mx-1 m-1">
+                    <img src="img/agua-da-chuva-em-um-macro-verde-da-folha.jpg" alt="Imagem 1" class="card-img-top">
+                    <section class="card-body">
+                        <h5 class="card-title">Notícia 1</h5>
+                        <p class="card-text">
+                            ⭐⭐⭐⭐⭐ 5.0
+                        </p>
+                        <p class="card-text">
+                            <small class="text-body-secondary">Atualizado há 3 minutos</small>
+                        </p>
+                    </section>
+                </article>
             </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAvancado" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselAvancado" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-    </div>
+        </section>
     </main>
 
     <!--Rodapé da página-->
-    <footer>
-        
+    <footer class="bg-dark text-white row p-4 pt-5">
+        <section class="col-12 col-sm-3 bg-warning">
+            <h5 id="sobre">Sobre o CriticCine</h5>
+            <p>CriticCine é uma plataforma independente de avaliações, críticas e recomendações de filmes, feita por cinéfilos para cinéfilos. Conteúdo direto, sem spoilers.</p>
+        </section>
+
+        <nav class="col-12 col-sm-3">
+            <h5 id="navegacao">Navegação</h5>
+            <ul>
+            <li><a href="/filmes-populares">Filmes Populares</a></li>
+            <li><a href="/ultimas-avaliacoes">Últimas Avaliações</a></li>
+            <li><a href="/top-avaliadores">Top Avaliadores</a></li>
+            <li><a href="/cadastro">Cadastre-se</a></li>
+            </ul>
+        </nav>
+
+        <section class="col-12 col-sm-3 bg-warning">
+            <h5 id="contato">Contato</h5>
+            <address>
+            <ul>
+                <li>Email: <a href="mailto:contato@criticcine.com">contato@criticcine.com</a></li>
+                <li>Instagram: <a href="https://instagram.com/criticcine">@criticcine</a></li>
+                <li>Twitter/X: <a href="https://x.com/criticcine">@criticcine</a></li>
+            </ul>
+            </address>
+        </section>
+
+        <section class="col-12 col-sm-3 bg-warning">
+            <h5 id="legal">Informações Legais</h5>
+            <ul>
+            <li><a href="/termos">Termos de Uso</a></li>
+            <li><a href="/privacidade">Política de Privacidade</a></li>
+            <li><a href="/cookies">Política de Cookies</a></li>
+            </ul>
+        </section>
+
+        <small>&copy; 2025 CriticCine. Todos os direitos reservados.</small>
     </footer>
+
 
     <!--Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
