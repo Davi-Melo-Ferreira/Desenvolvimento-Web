@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinema</title>
+    <title>CineCritic</title>
 
     <!--CSS-->
     <link rel="stylesheet" href="css/estilo.css">
@@ -15,9 +15,9 @@
         crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background-color: #333;">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-2 fixed-top">
-        <a href="index.html" class="navbar-brand">Cinema</a>
+        <a href="index.html" class="navbar-brand">CineCritic</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-target"
             aria-controls="menu-target" aria-expanded="false" aria-label="Toggle navigation"><span
                 class="navbar-toggler-icon"></span>
@@ -51,8 +51,8 @@
         </div>
     </nav>
     <!--Container para o conteúdo-->
-    <main class="container text-white">
-        <h1 class="display-5 mt-4">Nos Contate</h1>
+    <main class="container text-white" style="width: 50%;">
+        <h1 class="display-5 mt-4 pt-5 text-warning">Nos Contate</h1>
         <hr>
         <form class="m-5">
             <section class="p-2">
@@ -81,11 +81,12 @@
             <hr>
 
             <section class="p-2">
-                <h2 class="display-5">Escreva sua Mensagem</h2>
+                <h2 class="display-5 text-warning">Escreva sua Mensagem</h2>
 
                 <article class="mb-3">
                     <label for="mensagem" class="form-label">Mensagem</label>
                     <textarea class="form-control" id="mensagem" rows="3"></textarea>
+                    <button class="btn btn-warning mt-2" type="submit">Enviar</button>
                 </article>
             </section>
         </form>
@@ -93,38 +94,39 @@
 
     <!--Rodapé da página-->
     <footer class="bg-dark text-white row p-4 pt-5">
-        <section class=" col-sm-3 bg-warning">
-            <h5 id="sobre">Sobre o CriticCine</h5>
-            <p>CriticCine é uma plataforma independente de avaliações, críticas e recomendações de filmes, feita por cinéfilos para cinéfilos. Conteúdo direto, sem spoilers.</p>
+        <section class="col-sm-3">
+            <h5 class="text-warning" id="sobre">Sobre o CriticCine</h5>
+            <p class="text-white">CriticCine é uma plataforma independente de avaliações, críticas e recomendações de filmes, feita por
+                cinéfilos para cinéfilos. Conteúdo direto, sem spoilers.</p>
         </section>
 
-        <nav class=" col-sm-3">
-            <h5 id="navegacao">Navegação</h5>
+        <nav class="col-sm-3">
+            <h5 class="text-warning" id="navegacao">Navegação</h5>
             <ul>
-            <li><a href="/filmes-populares">Filmes Populares</a></li>
-            <li><a href="/ultimas-avaliacoes">Últimas Avaliações</a></li>
-            <li><a href="/top-avaliadores">Top Avaliadores</a></li>
-            <li><a href="/cadastro">Cadastre-se</a></li>
+                <li><a href="#emalta">Em Alta</a></li>
+                <li><a href="#filmes">Filmes</a></li>
+                <li><a href="#series">Séries</a></li>
+                <li><a href="#contato">Contate-nos</a></li>
             </ul>
         </nav>
 
-        <section class=" col-sm-3 bg-warning">
-            <h5 id="contato">Contato</h5>
+        <section class="col-sm-3">
+            <h5 class="text-warning" id="contato">Contato</h5>
             <address>
-            <ul>
-                <li>Email: <a href="mailto:contato@criticcine.com">contato@criticcine.com</a></li>
-                <li>Instagram: <a href="https://instagram.com/criticcine">@criticcine</a></li>
-                <li>Twitter/X: <a href="https://x.com/criticcine">@criticcine</a></li>
-            </ul>
+                <ul>
+                    <li>Email: <a href="mailto:contato@criticcine.com">contato@criticcine.com</a></li>
+                    <li>Instagram: <a href="https://instagram.com/criticcine">@criticcine</a></li>
+                    <li>Twitter/X: <a href="https://x.com/criticcine">@criticcine</a></li>
+                </ul>
             </address>
         </section>
 
-        <section class="col-sm-3 bg-warning">
-            <h5 id="legal">Informações Legais</h5>
+        <section class="col-sm-3">
+            <h5 class="text-warning" id="legal">Informações Legais</h5>
             <ul>
-            <li><a href="/termos">Termos de Uso</a></li>
-            <li><a href="/privacidade">Política de Privacidade</a></li>
-            <li><a href="/cookies">Política de Cookies</a></li>
+                <li><a href="/termos">Termos de Uso</a></li>
+                <li><a href="/privacidade">Política de Privacidade</a></li>
+                <li><a href="/cookies">Política de Cookies</a></li>
             </ul>
         </section>
 
