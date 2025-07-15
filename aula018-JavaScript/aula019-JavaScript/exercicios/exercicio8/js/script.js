@@ -1,0 +1,22 @@
+let valor = Number(prompt("Insira um número inteiro"));
+
+var multiplicacao = 1 * valor;
+console.log("1x",valor,"=",multiplicacao)
+var multiplicacao = 2 * valor;
+console.log("2x",valor,"=",multiplicacao)
+var multiplicacao = 3 * valor;
+console.log("3x",valor,"=",multiplicacao)
+var multiplicacao = 4 * valor;
+console.log("4x",valor,"=",multiplicacao)
+var multiplicacao = 5 * valor;
+console.log("5x",valor,"=",multiplicacao)
+var multiplicacao = 6 * valor;
+console.log("6x",valor,"=",multiplicacao)
+var multiplicacao = 7 * valor;
+console.log("7x",valor,"=",multiplicacao)
+var multiplicacao = 8 * valor;
+console.log("8x",valor,"=",multiplicacao)
+var multiplicacao = 9 * valor;
+console.log("9x",valor,"=",multiplicacao)
+var multiplicacao = 10 * valor;
+console.log("10x",valor,"=",multiplicacao)
