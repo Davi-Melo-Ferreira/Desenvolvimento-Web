@@ -1,8 +1,8 @@
 function ehPar (numero) {
     if (numero % 2 == 0){
-        console.log(`Número ${numero} é Par`);
+        console.log(true);
     } else{
-        console.log(`Número ${numero} Não é Par`);
+        console.log(false);
     }
 };
 
