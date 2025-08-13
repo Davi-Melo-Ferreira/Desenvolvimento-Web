@@ -87,11 +87,11 @@ function exibirVagas() {
     let mensagem = "--- Status das Vagas ---\n";
     // Iteração dentro de vagas
     vagas.forEach((vaga, index) => {
-        mensagem += `\nVaga ${index + 1}:\n`;
-        mensagem += `   Status: ${vaga.disponivel ? "Disponível" : "Ocupada"}\n`;
-        mensagem += `   Entrada: ${vaga.entrada ? vaga.entrada : "N/A"}\n`;
-        mensagem += `   Saída: ${vaga.saida ? vaga.saida : "N/A"}\n`;
-        mensagem += "--------------------------";
+        console.log(`\nVaga ${index + 1}:\n`);
+        console.log(`   Status: ${vaga.disponivel ? "Disponível" : "Ocupada"}\n`);
+        console.log(`   Entrada: ${vaga.entrada ? vaga.entrada : "N/A"}\n`);
+        console.log(`   Saída: ${vaga.saida ? vaga.saida : "N/A"}\n`);
+        console.log("--------------------------");
     });
     alert(mensagem);
 }
