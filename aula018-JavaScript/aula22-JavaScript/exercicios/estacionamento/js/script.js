@@ -20,7 +20,7 @@ while (true) {
     if (opcao === '1') {
         ocuparVaga();
     } else if (opcao === '2') {
-        liberarVaga();
+        liberarVaga(exibirVagas());
     } else if (opcao === '3') {
         exibirVagas();
     } else if (opcao === '4') {
@@ -44,7 +44,7 @@ function ocuparVaga() {
 }
 
 
-function liberarVaga() {
+function liberarVaga(callback) {
   // Encontra a primeira vaga ocupada para verificar se há alguma disponível para liberar
   for (let i = 0; i < vagas.length; i++) {
     if (vagas[i].disponivel === false) {
@@ -55,6 +55,7 @@ function liberarVaga() {
     }
   }
 
+  callback; // mostras as vagas
   // Se houver vagas ocupadas, pede o número da vaga ao usuário
   let numeroVaga = prompt("Digite o número da vaga que deseja liberar:");
 
