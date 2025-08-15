@@ -5,16 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+        crossorigin="anonymous">
+
 </head>
 
-<body>
-    <input type="number" id="x" placeholder="Digite um Número">
-    <input type="number" id="y" placeholder="Digite um Número">
-    <button id="btnSoma">Somar</button>
-    <button id="btnSubtracao">Subtrair</button>
-    <button id="btnMultiplicacao">Multiplicar</button>
-    <button id="btnDivisao">Dividir</button>
-    <ul id="resultado"></ul>
-    <script src="js/script.js"></script>
+<body class="container bg-dark text-white">
+    <h1 class="text-center my-5">Calculadora</h1>
+    <div class="row g-3 mb-4">
+        <div class="col-12 col-md-6">
+            <input type="number" id="x" placeholder="Digite o primeiro número" class="form-control">
+        </div>
+        <div class="col-12 col-md-6">
+            <input type="number" id="y" placeholder="Digite o segundo número" class="form-control">
+        </div>
+    </div>
+    <p id="resultado" class=" text-center fs-5 form-control list-unstyled">Resposta</p>
+
+    <div class="row g-3">
+        <div class="col-md-3 col-6">
+            <button type="button" id="btnSoma" class="btn btn-warning w-100">Somar</button>
+        </div>
+        <div class="col-md-3 col-6">
+            <button type="button" id="btnSubtracao" class="btn btn-warning w-100">Subtrair</button>
+        </div>
+        <div class="col-md-3 col-6">
+            <button type="button" id="btnMultiplicacao" class="btn btn-warning w-100">Multiplicar</button>
+        </div>
+        <div class="col-md-3 col-6">
+            <button type="button" id="btnDivisao" class="btn btn-warning w-100">Dividir</button>
+        </div>
+    </div>
+        <script src="js/script.js"></script>
 </body>
 </html>

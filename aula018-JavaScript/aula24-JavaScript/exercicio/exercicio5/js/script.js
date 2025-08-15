@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
     document.getElementById('btnAdicionar').addEventListener('click', function(){
         entrada = entradaInput.value;
+        if (entrada == ''){
+            add('Digite algo!');
+            return;
+        }
         add(entrada);
     });
 })

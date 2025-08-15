@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function(){
     // função somar
     document.getElementById('btnSoma').addEventListener('click', function(){
         limpar();
-        x = parseFloat(x.value);
-        y = parseFloat(y.value);
-        const soma = x + y;
+        const x1 = Number(x.value);
+        const y1 = Number(y.value);
+        const soma = x1 + y1;
         add(soma);
 
     });
@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', function(){
     // subtrair
     document.getElementById('btnSubtracao').addEventListener('click', function(){
         limpar();
-        const subtracao = x - y;
+        const x1 = Number(x.value);
+        const y1 = Number(y.value);
+        const subtracao = x1 - y1;
         add(subtracao);
 
     });
@@ -37,7 +39,9 @@ document.addEventListener('DOMContentLoaded', function(){
     // multiplicar
     document.getElementById('btnMultiplicacao').addEventListener('click', function(){
         limpar();
-        const multiplicacao = x * y;
+        const x1 = Number(x.value);
+        const y1 = Number(y.value);
+        const multiplicacao = x1 * y1;
         add(multiplicacao);
 
     });
@@ -45,7 +49,9 @@ document.addEventListener('DOMContentLoaded', function(){
     // dividir
     document.getElementById('btnDivisao').addEventListener('click', function(){
         limpar();
-        const divisao = x / y;
+        const x1 = Number(x.value);
+        const y1 = Number(y.value);
+        const divisao = x1 / y1;
         add(divisao);
 
     });
