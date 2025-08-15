@@ -13,7 +13,7 @@ while (true) {
         "1. Ocupar uma vaga\n" +
         "2. Adicionar horário de saída (liberar vaga)\n" +
         "3. Visualizar todas as vagas\n" +
-        "4. Sair\n" +
+        "4. Sair\n"
         "Escolha uma opção:"
     );
 

@@ -18,16 +18,16 @@ body{
 @keyframes moverEColorir {
     0%{
         transform: translateY(0);
-        background-color: var(--cor);
+        /* background-color: var(--cor); */
     }
 
     50%{
         transform: translateY(-50px);
-        background-color: var(--cor);
+        /* background-color: var(--cor); */
     }
 
     100%{
         transform: TranslateY(0);
-        background-color: var(--cor);
+        /* background-color: var(--cor); */
     }
 }
