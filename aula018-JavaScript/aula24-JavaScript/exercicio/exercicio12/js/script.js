@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', function(){
             add('Digite um número válido.');
             return;
         }
-        for (let i = entrada; i > 0; i--) {
-        setTimeout(() => {
-            limpar();
-            add(i);
-            if (i === 0) {
-                add('Tempo esgotado!');
-            }
-        }, (entrada - i) * 1000);
-    }
+        for (let i = entrada; i >= 0; i--) {
+            setTimeout(() => {
+                limpar();
+                add(i);
+                if (i === 0) {
+                    add('Tempo esgotado!');
+                }
+            }, (entrada - i) * 1000);
+        }
     });
 })
