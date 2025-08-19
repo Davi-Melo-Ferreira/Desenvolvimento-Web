@@ -3,5 +3,5 @@
     width: 100px;
     height: 100px;
     background-color: white;
-    border-radius: 0px;
+    transition: background 0.7s;
 }
