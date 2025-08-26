@@ -11,78 +11,129 @@
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-        crossorigin="anonymous">
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 
 <body>
     <!--Cabeçalho do Site-->
-    <header>
-        <h1>Atividade 04: Praticqando Condicionais JS</h1>
+    <header class="text-center bg-dark text-white p-5">
+        <h1>Atividade 04: Praticando Condicionais JS</h1>
     </header>
 
     <!--Container para o conteúdo-->
     <main>
-        <section>
-            <article>
-                <p>WebData Solutions</p>
-                <input type="text" placeholder="Digite Aqui..." id="entradaParimpar">
-                <p id="saidaParimpar"></p>
-                <button type="button" id="btnParimpar">Encontrar Par ou ímpar!</button>
-            </article>
-            <article>
-                <p>CodeMetrics</p>
-                <input type="number" placeholder="Digite Aqui..." id="entradaMaior1">
-                <input type="number" placeholder="Digite Aqui..." id="entradaMaior2">
-                <input type="number" placeholder="Digite Aqui..." id="entradaMaior3">
-                <p id="saidaMaior"></p>
-                <button type="button" id="btnMaior">Encontrar Maior Número!</button>
-            </article>
-            <article>
-                <p>SpeedControl</p>
-                <input type="number" placeholder="Digite Aqui..." id="entradaVelocidade">
-                <p id="saidaVelocidade"></p>
-                <button type="button" id="btnVelocidade">Monitoramento de Velocidade!</button>
-            </article>
-            <article>
-                <p>DevSalary</p>
-                <input type="number" placeholder="Digite Aqui..." id="entradaSalario">
-                <p id="saidaSalario"></p>
-                <button type="button" id="btnSalario">Aumento Salarial!</button>
-            </article>
-            <article>
-                <p>ViaWeb</p>
-                <input type="number" placeholder="Digite Aqui..." id="entradaPassagem">
-                <p id="saidaPassagem"></p>
-                <button type="button" id="btnPassagem">Preço da Passagem!</button>
-            </article>
-            <article>
-                <p>WebYear</p>
-                <input type="number" placeholder="Digite Aqui..." id="entradaBissexto">
-                <p id="saidaBissexto"></p>
-                <button type="button" id="btnBissexto">Ano Bissexto!</button>
-            </article>
-            <article>
-                <p>TriangulaWeb</p>
-                <input type="number" placeholder="Digite Aqui..." id="entradaPesquisar1">
-                <input type="number" placeholder="Digite Aqui..." id="entradaPesquisar2">
-                <input type="number" placeholder="Digite Aqui..." id="entradaPesquisar3">
-                <p id="saidaPesquisar"></p>
-                <button type="button" id="btnPesquisar">Pesquisar!</button>
-            </article>
-            <article>
-                <p>MathSolver</p>
-                <input type="text" placeholder="Digite Aqui..." id="entradaEquacao1">
-                <input type="text" placeholder="Digite Aqui..." id="entradaEquacao2">
-                <p id="saidaEquacao"></p>
-                <button type="button" id="btnEquacao">Equação do 2° Grau!</button>
-            </article>
-        </section>
+        <div id="carouselArticles" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <article
+                        class="bg-dark text-white p-5 d-flex flex-column align-items-center justify-content-center min-vh-50">
+                        <h3>WebData Solutions</h3>
+                        <p>Descubra se o número é Ímpar ou par</p>
+                        <input type="text" placeholder="Digite Aqui..." id="entradaParimpar">
+                        <p id="saidaParimpar"></p>
+                        <button class="btn btn-primary" type="button" id="btnParimpar">Encontrar Par ou ímpar!</button>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article
+                        class="bg-dark text-white p-5 d-flex flex-column align-items-center justify-content-center min-vh-50">
+                        <h3>CodeMetrics</h3>
+                        <p>Verifica o Maior e o Menor número</p>
+                        <div class="idput">
+                            <input type="number" placeholder="Digite Aqui..." id="entradaMaior1">
+                            <input type="number" placeholder="Digite Aqui..." id="entradaMaior2">
+                            <input type="number" placeholder="Digite Aqui..." id="entradaMaior3">
+                        </div>
+                        <p id="saidaMaior"></p>
+                        <button class="btn btn-primary" type="button" id="btnMaior">Encontrar Maior Número!</button>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article
+                        class="bg-dark text-white p-5 d-flex flex-column align-items-center justify-content-center min-vh-50">
+                        <h3>SpeedControl</h3>
+                        <p>Verifica se o número ultrapassa o limite de velocidade!</p>
+                        <input type="number" placeholder="Digite Aqui..." id="entradaVelocidade">
+                        <p id="saidaVelocidade"></p>
+                        <button class="btn btn-primary" type="button" id="btnVelocidade">Monitoramento de
+                            Velocidade!</button>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article
+                        class="bg-dark text-white p-5 d-flex flex-column align-items-center justify-content-center min-vh-50">
+                        <h3>DevSalary</h3>
+                        <p>Verifica se o Salário digitado receberá Aumento</p>
+                        <input type="number" placeholder="Digite Aqui..." id="entradaSalario">
+                        <p id="saidaSalario"></p>
+                        <button class="btn btn-primary" type="button" id="btnSalario">Aumento Salarial!</button>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article
+                        class="bg-dark text-white p-5 d-flex flex-column align-items-center justify-content-center min-vh-50">
+                        <h3>ViaWeb</h3>
+                        <p>Verifica o preço da passagem de acordo com os quilômetros</p>
+                        <input type="number" placeholder="Digite Aqui..." id="entradaPassagem">
+                        <p id="saidaPassagem"></p>
+                        <button class="btn btn-primary" type="button" id="btnPassagem">Preço da Passagem!</button>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article
+                        class="bg-dark text-white p-5 d-flex flex-column align-items-center justify-content-center min-vh-50">
+                        <h3>WebYear</h3>
+                        <p>Verifica se o ano digitado é Bissexto ou não</p>
+                        <input type="number" placeholder="Digite Aqui..." id="entradaBissexto">
+                        <p id="saidaBissexto"></p>
+                        <button class="btn btn-primary" type="button" id="btnBissexto">Ano Bissexto!</button>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article
+                        class="bg-dark text-white p-5 d-flex flex-column align-items-center justify-content-center min-vh-50">
+                        <h3>TriangulaWeb</h3>
+                        <p>Verifica se os três valores digitados formam um triângulo</p>
+                        <div class="idput">
+                            <input type="number" placeholder="Digite Aqui..." id="entradaPesquisar1">
+                            <input type="number" placeholder="Digite Aqui..." id="entradaPesquisar2">
+                            <input type="number" placeholder="Digite Aqui..." id="entradaPesquisar3">
+                        </div>
+
+                        <p id="saidaPesquisar"></p>
+                        <button class="btn btn-primary" type="button" id="btnPesquisar">Pesquisar!</button>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article
+                        class="bg-dark text-white p-5 d-flex flex-column align-items-center justify-content-center min-vh-50">
+                        <h3>MathSolver</h3>
+                        <p>Realiza uma equação de 2° Grau com os dados obtidos!</p>
+                        <div class="idput">
+                            <input type="number" placeholder="Digite Aqui..." id="entradaEquacao1">
+                            <input type="number" placeholder="Digite Aqui..." id="entradaEquacao2">
+                            <input type="number" placeholder="Digite Aqui..." id="entradaEquacao3">
+                        </div>
+
+                        <p id="saidaEquacao"></p>
+                        <button class="btn btn-primary" type="button" id="btnEquacao">Equação do 2° Grau!</button>
+                    </article>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselArticles" data-bs-slide="prev">
+                <span id="butao" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselArticles" data-bs-slide="next">
+                <span id="butao" class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
     </main>
 
     <!--Rodapé da página-->
     <footer>
-        
+
     </footer>
 
     <!--Javascript-->
@@ -90,7 +141,7 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 </body>
 
 </html>

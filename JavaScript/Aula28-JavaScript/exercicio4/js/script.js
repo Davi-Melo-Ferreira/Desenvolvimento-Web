@@ -1,15 +1,18 @@
+import { parimpar } from './parimpar.js';
+import { maior } from './maior.js';
+import { velocidade } from './velocidade.js';
+import { salario } from './salario.js';
+import { passagem } from './passagem.js';
+import { bissexto } from './bissexto.js';
+import { triangulo } from './triangulo.js';
+import { equacao } from './equacao.js';
+
 document.getElementById('btnParimpar').addEventListener('click', function(){
     const entradaParimpar = document.getElementById('entradaParimpar');
     const saidaParimpar = document.getElementById('saidaParimpar');
     const entrada = entradaParimpar.value;
     saidaParimpar.innerHTML = '';
-
-    if (isNaN(entrada)){
-        saidaParimpar.innerHTML = "Digite um número";
-    } else{
-        const saida = entrada % 2 == 0 ? `${entrada} é par` : `${entrada} é ímpar`;
-        saidaParimpar.innerHTML = `${saida}`;
-    }
+    saidaParimpar.innerHTML = parimpar(entrada);
 })
 
 document.getElementById('btnMaior').addEventListener('click', function(){
@@ -18,17 +21,7 @@ document.getElementById('btnMaior').addEventListener('click', function(){
     const n3 = document.getElementById('entradaMaior3').value;
     const saidaMaior = document.getElementById('saidaMaior');
     saidaMaior.innerHTML = '';
-
-    if (isNaN(n1) || isNaN(n2) || isNaN(n3)) {
-        saidaMaior.innerHTML = "Apenas números válidos.";
-        return;
-    } else if(n1 === n2 && n2 === n3) {
-        saidaMaior.innerHTML = "Todos os números são iguais.";
-    } else {
-        const maior = Math.max(n1, n2, n3);
-        const menor = Math.min(n1, n2, n3);
-        saidaMaior.innerHTML = `Maior número: ${maior} <br> Menor número: ${menor}`;
-    }
+    saidaMaior.innerHTML = maior(n1, n2, n3);
 })
 
 document.getElementById('btnVelocidade').addEventListener('click', function(){
@@ -37,9 +30,7 @@ document.getElementById('btnVelocidade').addEventListener('click', function(){
     const entrada = entradaVelocidade.value;
     saidaVelocidade.innerHTML = '';
 
-    const saida = entrada > 60 ? 'Acima do Limite': 'Abaixo do Limite';
-
-    saidaVelocidade.innerHTML = `A velocidade está ${saida}`;
+    saidaVelocidade.innerHTML = velocidade(entrada);
 })
 
 
@@ -48,21 +39,7 @@ document.getElementById('btnSalario').addEventListener('click', function(){
     const saidaSalario = document.getElementById('saidaSalario');
     const entrada = parseFloat(entradaSalario.value);
     saidaSalario.innerHTML = '';
-
-    if (isNaN(entrada) || entrada <= 0){
-        saidaSalario.innerHTML = "Digite um valor acima de 0";
-        return;
-    }
-    
-    if(entrada < 1000){
-        const valor = entrada + (entrada * 0.10);
-        saidaSalario.innerHTML = `Salário de $${entrada.toFixed(2)} alterado para ${valor.toFixed(2)}`;
-    } else if(entrada > 1500){
-        const valor = entrada + (entrada * 0.05);
-        saidaSalario.innerHTML = `Salário de $${entrada.toFixed(2)} alterado para ${valor.toFixed(2)}`;
-    } else{
-        saidaSalario.innerHTML = "Salário não foi alterado";
-    }
+    saidaSalario.innerHTML = salario(entrada);
 })
 
 document.getElementById('btnPassagem').addEventListener('click', function(){
@@ -70,10 +47,7 @@ document.getElementById('btnPassagem').addEventListener('click', function(){
     const saidaPassagem = document.getElementById('saidaPassagem');
     const entrada = Number(entradaPassagem.value);
     saidaPassagem.innerHTML = '';
-
-    const valor = entrada > 200 ? 0.70 * entrada : 0.40 * entrada;
-
-    saidaPassagem.innerHTML = `Valor: $${valor}(${entrada}km)`;
+    saidaPassagem.innerHTML = passagem(entrada);
 })
 
 document.getElementById('btnBissexto').addEventListener('click', function(){
@@ -81,10 +55,7 @@ document.getElementById('btnBissexto').addEventListener('click', function(){
     const saidaBissexto = document.getElementById('saidaBissexto');
     const entrada = Number(entradaBissexto.value);
     saidaBissexto.innerHTML = '';
-
-    const bissexto = (entrada % 4 === 0 && entrada % 100 !== 0) || (entrada % 400 === 0) ? "é Bissexto" : "Não é Bissexto";
-
-    saidaBissexto.innerHTML = `O ano ${entrada} ${bissexto}`;
+    saidaBissexto.innerHTML = bissexto(entrada);
 })
 
 document.getElementById('btnPesquisar').addEventListener('click', function(){
@@ -97,17 +68,17 @@ document.getElementById('btnPesquisar').addEventListener('click', function(){
     const c = Number(entradaPesquisar3.value);
     saidaPesquisar.innerHTML = '';
 
-    const triangulo = a + b > c && a + c > b && b + c > a ? "" : "Não";
-
-    saidaPesquisar.innerHTML = `Os valores ${a}, ${b} e ${c} ${triangulo} formam um Triângulo`;
+    saidaPesquisar.innerHTML = triangulo(a, b, c);
 })
 
-// document.getElementById('btn').addEventListener('click', function(){
-//     const entrada = document.getElementById('entrada');
-//     const saida = document.getElementById('saida');
-//     const entrada = entradaVelocidade.value;
-//     saida.innerHTML = '';
-
-//     saida.innerHTML = `A velocidade está ${saida}`;
-// })
-
+document.getElementById('btnEquacao').addEventListener('click', function(){
+    const entradaEquacao1 = document.getElementById('entradaEquacao1');
+    const entradaEquacao2 = document.getElementById('entradaEquacao2');
+    const entradaEquacao3 = document.getElementById('entradaEquacao3');
+    const saidaEquacao = document.getElementById('saidaEquacao');
+    const a = parseFloat(entradaEquacao1.value);
+    const b = parseFloat(entradaEquacao2.value);
+    const c = parseFloat(entradaEquacao3.value);
+    saidaEquacao.innerHTML = '';
+    saidaEquacao.innerHTML = equacao(a, b, c);
+})
