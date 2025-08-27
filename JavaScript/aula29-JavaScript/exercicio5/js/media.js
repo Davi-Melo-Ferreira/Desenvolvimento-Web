@@ -1,16 +1,15 @@
-export function media(frequencia){
-    const lista = frequencia.split(', ');
-    return lista;
+export function media(notas) {
+    const lista = notas.split(', ').map(num => parseFloat(num));
 
-    let array = Number(frequencia);
+    if (lista.length !== 4) {
+        alert('Frequência deve conter exatamente 4 números');
+        return;
+    }
 
-    // if (array.lenght > 4 || array.lenght < 0){
-    //     alert('Frequência deve conter apenas 4 números')
-    // } else{
-    //     let soma = 0
-    //     array.forEach(function(element) {
-    //         soma =+ parseFloat(element);
-    //     })
-    //     return soma / array.lenght;
-    // }
+    let soma = 0;
+    lista.forEach(element => {
+        soma += element;
+    });
+
+    return soma / lista.length;
 }
