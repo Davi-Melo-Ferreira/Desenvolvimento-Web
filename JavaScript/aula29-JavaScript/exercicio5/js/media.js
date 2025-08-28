@@ -1,4 +1,4 @@
-export function media(notas) {
+export function mediar(notas) {
     const lista = notas.split(', ').map(num => parseFloat(num));
 
     if (lista.length !== 4) {

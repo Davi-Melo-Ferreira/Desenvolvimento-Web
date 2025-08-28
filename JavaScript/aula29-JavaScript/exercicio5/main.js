@@ -1,33 +1,59 @@
-import { media } from './js/media.js'
+import { mediar } from './js/media.js'
 import { mencionar } from './js/mencionar.js'
 
 document.addEventListener('DOMContentLoaded', function () {
     const saida = document.getElementById('saidaInput');
     const limpar = () => saida.innerHTML = '';
     let alunos = [];
+    let indice = 0;
 
-    const add = alunos => {
-        saida.innerHTML = ''; // Limpa antes de adicionar todos
-        alunos.forEach(({ nome, frequencia, media, mencao }) => {
+    const add = array => {
+        limpar();
+        array.forEach(({ nome, frequencia, media, mencao, id}) => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td>${nome}</td>
                 <td>${frequencia}%</td>
                 <td>${media}</td>
                 <td>${mencao}</td>
-                <td><button id="btnRemover">Remover</button></td>`;
+                <td><button data-id="${id}">Remover</button></td>`;
             saida.appendChild(tr);
+
+            const btnRemover = tr.querySelector('button');
+            btnRemover.addEventListener('click', function(){
+                const index = alunos.findIndex(aluno => aluno.id === id);
+                if (index > -1){ // se o array alunos estiver vazio, findIndex retornará -1
+                    alunos.splice(index, 1)
+                    add(alunos);
+                }
+                
+            })
         });
     }
+
+    // DELEGAÇÃO DE EVENTOS
+
+    saida.addEventListener('click', function(event) { // cria um listener que identifica cliques na saida
+        const btn = event.target; // pega qual evento foi clicado 
+        if (btn.tagName === 'BUTTON' && btn.dataset.id) { // verificação de tag e se possui id com dataset
+            const id = parseInt(btn.dataset.id); // casting do id pego no dataset.id
+            const index = alunos.findIndex(aluno => aluno.id === id);
+                if (index > -1){ // se o array alunos estiver vazio, findIndex retornará -1
+                    alunos.splice(index, 1)
+                    add(alunos);
+                }
+        }
+    });
+    
 
     document.getElementById('btnAdicionar').addEventListener('click', function () {
         const notas = document.getElementById('notasInput').value;
         const nome = document.getElementById('nomeInput').value;
         const frequencia = document.getElementById('frequenciaInput').value;
-        const mediaValor = media(notas);
+        const mediaValor = mediar(notas);
         const mencaoValor = mencionar(mediaValor);
-        alunos.push({ nome, frequencia, media: mediaValor, mencao: mencaoValor });
+        
+        alunos.push({id: indice++, nome, frequencia, media: mediaValor, mencao: mencaoValor });
         add(alunos);
     });
-
-})
+});
