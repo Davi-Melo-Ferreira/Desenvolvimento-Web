@@ -1,6 +1,8 @@
 export function mencionar(mediaValor){
-    let mencao;
-    if (mediaValor === 10) {
+    let mencao = undefined;
+    if (mediaValor < 0){
+        return;
+    } else if (mediaValor === 10) {
         mencao = "A";
     } else if (mediaValor >= 6) {
         mencao = "PA";

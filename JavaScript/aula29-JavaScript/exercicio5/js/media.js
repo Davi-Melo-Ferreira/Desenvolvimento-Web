@@ -1,8 +1,10 @@
 export function mediar(notas) {
     const lista = notas.split(', ').map(num => parseFloat(num));
-
+    if (lista.some(notas => isNaN(notas))){
+        return
+    }
     if (lista.length !== 4) {
-        alert('Frequência deve conter exatamente 4 números');
+        alert('Média deve conter exatamente 4 números');
         return;
     }
 

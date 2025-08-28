@@ -16,28 +16,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 <td>${frequencia}%</td>
                 <td>${media}</td>
                 <td>${mencao}</td>
-                <td><button data-id="${id}">Remover</button></td>`;
+                <td><button class="rounded" data-id="${id}">Remover</button></td>`;
             saida.appendChild(tr);
-
-            const btnRemover = tr.querySelector('button');
-            btnRemover.addEventListener('click', function(){
-                const index = alunos.findIndex(aluno => aluno.id === id);
-                if (index > -1){ // se o array alunos estiver vazio, findIndex retornará -1
-                    alunos.splice(index, 1)
-                    add(alunos);
-                }
-                
-            })
         });
     }
 
     // DELEGAÇÃO DE EVENTOS
-
     saida.addEventListener('click', function(event) { // cria um listener que identifica cliques na saida
         const btn = event.target; // pega qual evento foi clicado 
         if (btn.tagName === 'BUTTON' && btn.dataset.id) { // verificação de tag e se possui id com dataset
             const id = parseInt(btn.dataset.id); // casting do id pego no dataset.id
-            const index = alunos.findIndex(aluno => aluno.id === id);
+            const index = alunos.findIndex(aluno => aluno.id === id); // procura o objeto dentro do array com o id do botão pressionado
                 if (index > -1){ // se o array alunos estiver vazio, findIndex retornará -1
                     alunos.splice(index, 1)
                     add(alunos);
@@ -53,6 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const mediaValor = mediar(notas);
         const mencaoValor = mencionar(mediaValor);
         
+        if (mediaValor == undefined || mencaoValor == undefined || frequencia < 0){
+            alert('Preencha os dados corretamente!');
+            return;
+        }
         alunos.push({id: indice++, nome, frequencia, media: mediaValor, mencao: mencaoValor });
         add(alunos);
     });
